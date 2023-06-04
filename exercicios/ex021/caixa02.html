@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color:#F7F7F7 ;
+            margin: 0px;
+        }
+
+        header {
+            background-color:#333333;
+            padding: 20px;
+            margin: 15px;
+            text-align: center;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+        }
+
+        h1 {
+        color:#D1D1D1;
+        font-size: 100px;
+       }
+        
+       nav {
+        background-color:#FD8A24;
+        padding: 3px;
+       }
+
+
+       nav > a {
+          text-decoration: none;
+          color:black ;
+          font-weight: bold;
+          margin-right: 30px;
+       }
+
+       a:hover {
+        text-decoration: underline;
+        }
+
+       main {
+        background-color:#D8D8D8 ;
+        padding: 5px;
+        margin: 5px
+       }
+
+
+       article {
+        background-color: lightgrey;
+       }
+
+       article > aside {
+        background-color: rgb(156, 153, 153);
+        padding: 1px;
+        margin: 0px;
+       }
+
+       
+       footer {
+        background-color:#333333;
+        color:#D1D1D1;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+       }
+
+
+       span {
+        color:#FD8A24 ;
+       }
+
+       
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Foc<span class="cortema1">us<img src="imagens/exclamacao.png" alt="exclamacaotema" width="100px"></span></h1>  
+      <nav>
+          <a href="#">Top e últimas</a>
+          <a href="#">Conectividade</a>
+          <a href="#">Aplicativos</a>
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+      </nav>
+    </header>
+    <main>
+      <section >
+        <p>Esportes Política Tecnologia</p>
+      </section>
+      <section id="assuntos">
+        <article>
+          <h2>Notícias sobre o Brasil</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quasi ea sapiente, sint quae doloremque harum molestiae quisquam repellat eum deleniti consequuntur modi quibusdam iusto debitis eaque nisi vitae nam!</p>
+          <aside>
+            <p>Escrito por Camila Serrani</p>
+          </aside>
+        <article>
+          <h2>Mercado de ações despenca no último mês</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque commodi nisi, quia alias, laboriosam, enim dolorem qui optio reprehenderit id labore ipsam quae eos! Hic beatae repudiandae quos esse incidunt.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus laboriosam maxime voluptatem quasi, repellat, distinctio impedit, quos voluptate quidem laborum accusantium molestiae facilis nisi totam consequatur fugit nam perferendis sapiente.</p>
+          <aside>
+            <p>Escrito por João Paulo Torres</p>
+          </aside>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Desenvolvido por <span class="cortema">CamilaSerrani</span></p>
+    </footer>
+  </body>
+</html>
