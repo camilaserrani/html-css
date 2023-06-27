@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*Paleta de cores
+
+#F2C49B (pêssego)
+#F24535 (coral)
+#023859 (azul-marinho)
+*/
+
+/*Mobile First*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background: black url(../imagens/office.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
