@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InsideArch Pesquisa</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
+      </style>
     <link rel="shortcut icon" href="imagens/insidearch.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
@@ -12,11 +15,9 @@
 <main>
     <section>
         <h1>Pesquisa de Satisfação</h1>
-        <!--
-            Texto para pesquisa de satisfação
-        -->
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium obcaecati dicta, voluptatum enim, fuga rem, possimus illo ut explicabo repellat dolore sint. Illo qui minima, fugit est sit provident doloribus?
+        
+        <p id="topo">
+            Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma
         </p>
     
         <form action="pesquisa.php" method="post" autocomplete="on">
@@ -87,6 +88,10 @@
                 <input type="checkbox" name="facil" id="ifacil"><label for="ifacil">Facilidade de pagamento</label>
                 <input type="checkbox" name="obra" id="iobra"><label for="iobra">Acompanhamento de obra</label>
                 <input type="checkbox" name="outros" id="ioutros"><label for="ioutros">Outros</label> 
+            </div>
+            <div>
+                <label for="imsg">Nos ajude a melhorar com seu comentário ou sugestão</label><br>
+                    <textarea name="msg" id="imsg" cols="100" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
             </div>
             	
             <div><input type="submit" value="Enviar"></div>
