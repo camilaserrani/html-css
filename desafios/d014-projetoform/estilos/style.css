@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&display=swap');
+
 /*Paleta de cores
 
+#D98859 (terracota)
 #F2C49B (pêssego)
 #F24535 (coral)
 #023859 (azul-marinho)
@@ -9,43 +12,64 @@
 
 /*Mobile First*/
 
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0px;
+* {
     padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', Courier, monospace;
 }
 
-html {
-    height: 100vh;
-}
-
- body {
-    background: url(../imagens/office.jpg) fixed;
-    background-size: cover;
+body, html {
+    background-image: linear-gradient(115deg, #f2c49b83, #af6c4663), url(../imagens/office.jpg);
     background-position: center center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    color:#023859 ; 
+    text-shadow: 1px 1px 5px #0238594f;
+ }
+ 
+ header > h1 {
+     font-size: 2em;
+     padding-top: 35px;
+     line-height: 1.2;
+     font-weight: 400px;
+ }
+ 
+ header > p {
+     font-style: italic;
+     font-weight: bolder;
+     font-size: 1.125em;
+     padding-bottom: 20px;
+ }
+
+form {
+    width: 600px;
+    margin: auto;
+    background-color: #d98859a8;
+    height: 87vh;
+    border-radius: 5px;
+    padding: 30px;
+    color: #042e47;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125em;
+}
+
+div.grupo-form {
     
 }
 
-main {
-
-}
-
-section > h1 {
-  padding-top: 60px;
-           
-}
-
-section > #topo {
-    padding: 15px;
-    font-style: italic;
-    font-weight: bold;
-}
-
-form {
-    width: 720px;
-    padding: 20px;
-    background-color:#f2c49b7e;
-    height: 100%;
+input.form-control {
+    width: 100%;
     border-radius: 5px;
 }
+
+
