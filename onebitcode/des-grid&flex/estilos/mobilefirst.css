@@ -42,7 +42,7 @@
 
 .menu > p:hover {
     border-bottom: 2px solid rgb(105, 10, 26);
-    
+    border-radius: 10px;
     
 }
 
