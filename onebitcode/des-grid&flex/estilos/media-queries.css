@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+
+@media (max-width: 726px)
+{
+    .main {
+        grid-template-areas: 
+        "maincontent"
+        "sidebarcontent";
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sidebarcontent {
+        min-width: auto;
+    } 
+    
+    .rodapeancora {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px)
+{
+    .topo {
+        justify-content: center;
+    }
+
+    .rodape {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+
+
+

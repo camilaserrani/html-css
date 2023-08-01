@@ -14,143 +14,157 @@
 }
 
 .imglogo {
-    width: 250px;  
-    margin-left: 30px;  
+    width: 180px;      
 }
 
 .topo {
+    min-height: 40px;
+    width: 100%;
     background-color: rgb(17, 17, 17);
-    color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 150px;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 8px 15px;
 }
 
 .menu {
     display: flex;
-    column-gap: 30px;
-    padding: 30px;
+    gap: 15px;
 }
 
 .menu > p {
-    padding: 10px;
     cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid transparent;
+    color: white;
 }
 
-.menu > p:hover{
-   border-bottom: 2px solid rgb(172, 13, 40);
-   border-radius: 5px;
-}
-
-.titulo {
-    text-align: center;
+.menu > p:hover {
+    border-bottom: 2px solid #FF0043;
+    border-radius: 8px;
+    transition: 0.4s;
 }
 
 .titulo > h1 {
-    font-size: 1.60em;
+    font-size: 26px;
     font-weight: normal;
-    padding-top: 25px;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .titulo > p {
-    font-size: 1.10em;
-    padding-bottom: 25px;
+    text-align: center;
+    color: #383838;
 }
 
-img {
-    width: 300px;
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "maincontent sidebarcontent";
+    padding: 20px;
+    flex: 1 0 auto;
+}
+
+.maincardimg {
+    width: 100%;
     height: 200px;
     border-radius: 10px;
 }
 
-.main{
+.maincontent {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
-    flex: 1 1 400px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-    grid-template-areas: 
-    'item1 item2 item3'
-    'item4 item5 item6'
-    'item7 item8 item9';
+    grid-area: maincontent;
 }
 
 .item {
-    text-align: justify;
-    font-size: 1.1em;
+    width: 380px;
+    height: 400px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-h2 {
-    font-weight: normal;
+.item:hover {
+    border-color: rgb(17, 17, 17);
 }
 
-.item1 {
-    grid-area: item1;
-    min-width: 300px;
+.item > h2 {
+    padding: 6px;
 }
 
-.item2 {
-    grid-area: item2;
-    min-width: 300px;
+.item > p {
+  padding: 6px;
+  font-size: 17px;  
 }
 
-.item3 {
-    grid-area: item3;
-    min-width: 300px;
+.sidebarcardimg {
+    width: 100%;
+    border-radius: 10px;
 }
 
-.item4 {
-    grid-area: item4;
-    min-width: 300px;
+.sidebarcontent {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: sidebarcontent;
+    gap: 20px;
 }
 
-.item5 {
-    grid-area: item5;
-    min-width: 300px;
+.sidebarcard {
+    width: 75%;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.item6 {
-    grid-area: item6;
-    min-width: 300px;
+.sidebarcard:hover {
+    border-color: white;
 }
 
-.item7 {
-    grid-area: item7;
-    min-width: 300px;
+.sidebarcontent > h2 {
+    text-align: center;
 }
 
-.item8 {
-    grid-area: item8;
-    min-width: 300px;
-}
-
-.item9 {
-    grid-area: item9;
-    min-width: 300px;
+.sidebarcard > p {
+    text-align: center;
+    padding: 10px;
 }
 
 .rodape {
-    background-color: rgb(17, 17, 17);
-    color: white;
+    width: 100%;
+    min-height: 40px;
+    background-color: #171717;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    flex-basis: 100%;
-    min-height: 150px;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 15px;
 }
 
-a {
+.rodapeancora {
     text-decoration: none;
-    margin-right: 30px;
-    padding-bottom: 10px;
     color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: 0.4s;
 }
 
-a:hover{
-    border-bottom: 2px solid rgb(172, 13, 40);
-    border-radius: 5px;  
- }
+.rodapeancora:hover {
+    border-bottom: 2px solid #FF0043;  
+}
+
+
