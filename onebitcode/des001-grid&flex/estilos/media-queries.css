@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 700px){
+    .maincardcontent {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .maincard {
+        width: 300px;
+    } 
+
+    .textmaincontent {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        text-align: center;
+        width: 50%;
+    }
+    
+    .mediafooter {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .footercard1 {
+        width: 50%;
+    }
+
+
+    .footercard2 {
+        width: 50%;
+    }
+
+    .endfooter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 850px){
+    .maincard {
+        min-width: 250px;
+    }
+}
+
+@media  screen and (min-width: 928px){
+    .textheader {
+        width: 1000px;
+    }
+
+    .textmaincontent {
+        width: 850px;
+    }
+}
